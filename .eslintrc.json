@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    " react-app",
+    "react-app/jest",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "jsx-a11y",
+      "import",
+      "simple-import-sort"
+    ],
+    "rules": {
+      "import/first": "warn",
+      "import/newline-after-import": "warn",
+      "import/no-duplicates": "error",
+      "import/no-named-as-default-member": "off",
+      "simple-import-sort/imports": "warn",
+      "simple-import-sort/exports": "warn",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-sort-props": [
+        "warn",
+        {
+          "callbacksLast": true,
+          "shorthandFirst": true,
+          "ignoreCase": true,
+          "reservedFirst": true,
+          "noSortAlphabetically": true
+        }
+      ]
+    }
+  }
+}
