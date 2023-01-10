@@ -1,54 +1,50 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "jest": true,
-    "node": true
+    "es2021": true
   },
-  "extends": [
-    " react-app",
-    "react-app/jest",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "airbnb",
-    "prettier",
-    "plugin:prettier/recommended"
-  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "plugins": [
-      "react",
-      "react-hooks",
-      "jsx-a11y",
-      "import",
-      "simple-import-sort"
-    ],
-    "rules": {
-      "import/first": "warn",
-      "import/newline-after-import": "warn",
-      "import/no-duplicates": "error",
-      "import/no-named-as-default-member": "off",
-      "simple-import-sort/imports": "warn",
-      "simple-import-sort/exports": "warn",
-      "react/prop-types": "off",
-      "react/react-in-jsx-scope": "off",
-      "react/jsx-sort-props": [
-        "warn",
-        {
-          "callbacksLast": true,
-          "shorthandFirst": true,
-          "ignoreCase": true,
-          "reservedFirst": true,
-          "noSortAlphabetically": true
-        }
-      ]
-    }
+
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "off",
+    "react/prop-types": 0,
+    "max-len": ["error", { "code": 250 }],
+    "operator-linebreak": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "object-curly-newline": "off",
+    "no-unused-expressions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "implicit-arrow-linebreak": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "function-paren-newline": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "indent": "off",
+    "radix": "off",
+    "no-new": "off",
+    "import/order": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
   }
 }
