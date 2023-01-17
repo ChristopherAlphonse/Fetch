@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  content: ["./src/**/*.{js,jsx}", "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.{js,jsx}"],
   darkMode: "class",
   theme: {
     fontFamily: {
-      primary: "Lexend",
-      body: "Rubik",
+      primary: "Syne",
+      body: "Lexend",
     },
     container: {
       padding: {
@@ -23,16 +23,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#050402",
-        secondary: "#1C1D24",
-        tertiary: "#1C1D24",
-        accent: {
-          DEFAULT: "rgb(28 100 242 )",
-          hover: "rgb(28 100 242 )",
-        },
-        paragraph: "#D1D1D1",
+        blue: "#007bff",
+        indigo: "#6610f2",
+        violet: "#510359",
+        primary: "#300d38",
+        white: "#f1ece9",
+        black: "#343a40",
+        danger: "#dc3545",
+        success: "#04833e",
       },
     },
   },
-  plugins: [require("flowbite/plugin"), require("prettier-plugin-tailwindcss")],
+  plugins: [],
 };

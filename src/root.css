@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
 :root {
   --fetch-color-blue: #007bff;
   --fetch-color-indigo: #6610f2;
@@ -40,6 +39,4 @@
   --fetch-color-focus: #99d9f0;
   --fetch-color-light: #f8f9fa;
   --fetch-color-dark: #343a40;
-  --fetch-font-primary: "Lexend", "sans-serif";
-  --fetch-font-secondary: "Rubik", "sans-serif";
 }
