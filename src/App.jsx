@@ -1,9 +1,5 @@
 function App() {
-  return (
-    <section>
-      <article className="text-9xl"> Hello World </article>
-    </section>
-  );
+  return <div>App</div>;
 }
 
 export default App;
