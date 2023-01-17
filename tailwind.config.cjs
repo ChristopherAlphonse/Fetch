@@ -22,12 +22,16 @@ module.exports = {
       xl: "1280px",
     },
     extend: {
+      zIndex: {
+        100: "100",
+      },
       colors: {
         blue: "#007bff",
         indigo: "#6610f2",
         violet: "#510359",
         primary: "#300d38",
         white: "#f1ece9",
+        yellow: "#ffa900",
         black: "#343a40",
         danger: "#dc3545",
         success: "#04833e",
