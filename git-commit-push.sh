@@ -1,7 +1,8 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/bash
 
-git add .
+
+
+
 
 echo "Enter Your commit message:"
 read commitMessage
@@ -11,7 +12,3 @@ git commit -m "$commitMessage"
 echo "Enter branch name to push to:"
 read branch
 git push origin $branch
-
-
-
-yarn lint && yarn lint:fix

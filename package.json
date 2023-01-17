@@ -12,6 +12,11 @@
     "checked": "ncu && ncu -u && yarn install",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "sh ./git-commit-push.sh"
+    }
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
