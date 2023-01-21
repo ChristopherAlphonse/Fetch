@@ -1,42 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
 :root {
-  --fetch-color-blue: #007bff;
-  --fetch-color-indigo: #6610f2;
-  --fetch-color-violet: #510359;
-  --fetch-color-pink: #ed6a7c;
-  --fetch-color-red: #dc3545;
-  --fetch-color-orange: #ffa900;
-  --fetch-color-yellow: #ffdf02;
-  --fetch-color-green: #04833e;
-  --fetch-color-teal: #17799f;
-  --fetch-color-cyan: #17a2b8;
-  --fetch-color-white: #fff;
-  --fetch-color-gray: #ced4da;
-  --fetch-color-gray-dark: #343a40;
-  --fetch-color-gray-light: #f1ece9;
-  --fetch-color-black: #000;
-  --fetch-color-black-dark: #000;
-  --fetch-color-dark-purple: #300d38;
-  --fetch-color-light-purple: #890a74;
-  --fetch-color-blue-purple: #6d62dd;
-  --fetch-color-hot-pink: #f90075;
-  --fetch-color-another-purple: #230871;
-  --fetch-color-gray-purple: #c7c1e0;
-  --fetch-color-dark-gray: #9ca3af;
-  --fetch-color-sky-blue: #e5faff;
-  --fetch-color-dark-sky-blue: #ade7f5;
-  --fetch-color-primary: #300d38;
-  --fetch-color-secondary: #890a74;
-  --fetch-color-tertiary: #ffa900;
-  --fetch-color-quaternary: #ffdf02;
-  --fetch-color-links: #6d62dd;
-  --fetch-color-light-border: #dee2e6;
-  --fetch-color-success: #04833e;
-  --fetch-color-info: #17a2b8;
-  --fetch-color-warning: #ffdf02;
-  --fetch-color-danger: #dc3545;
-  --fetch-color-focus: #99d9f0;
-  --fetch-color-light: #f8f9fa;
-  --fetch-color-dark: #343a40;
+  --font-primary: "syne", sans-serif;
+  --font-secondary: "Lexend", sans-serif;
+}
+
+.font-syne {
+  font-family: var(--font-primary);
+}
+.font-Lexend {
+  font-family: var(--font-secondary);
 }

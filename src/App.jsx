@@ -1,19 +1,19 @@
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
-import NavBar from "./components/Navbar/Navbar";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
+import HomePage from "./components/Home/HomePage";
+import PageNotFound from "./PageNotFound ";
 
 function App() {
   return (
-    <div className="fixed w-full h-auto z-100">
-      <div className="transition-all bg-transparent md:py-8">
-        <div className="max-w-7xl px-5 md:pr-0 nav:pr-5 mx-auto">
-          <NavBar />
-          <Hero />
-          <Footer />
-        </div>
-      </div>
+    <div className="mt-2 overflow-hidden">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/Register" element={<HomePage />} />
+          <Route path="/" element={<Navigate to="/Register" />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
 export default App;
