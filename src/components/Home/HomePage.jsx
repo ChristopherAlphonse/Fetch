@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
+import Nav from "../Navbar/Nav";
 import { Suspense } from "react";
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
         <meta name="keywords" content="" />
       </Helmet>
       <Suspense fallback={<div> Loading ...</div>}>
+        <Nav />
         <Hero />
         <Footer />
       </Suspense>

@@ -112,9 +112,9 @@ function Hero() {
 
   return (
     <div className="h-half flex max-w-full items-center justify-center">
-      <div className="flex min-h-screen items-center justify-center  p-6">
+      <div className="flex min-h-screen items-center justify-center ">
         <div className="container mx-auto ">
-          <div className="mb-6 rounded bg-white p-4 px-4 shadow-lg md:p-8">
+          <div className="rounded bg-white p-4 px-4 shadow-lg md:p-8">
             <div className="grid grid-cols-1 gap-4 gap-y-2 text-sm lg:grid-cols-3">
               <div className="text-gray-600">
                 <p className="font-syne text-xl  font-bold">Personal Details</p>
