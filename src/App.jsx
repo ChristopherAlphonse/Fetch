@@ -5,7 +5,7 @@ import PageNotFound from "./PageNotFound ";
 
 function App() {
   return (
-    <div className="mt-2 overflow-hidden">
+    <div className="overflow-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/Register" element={<HomePage />} />

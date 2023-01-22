@@ -1,19 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
   content: ["./src/**/*.{js,jsx}"],
-  darkMode: "class",
   theme: {
     fontFamily: {
       primary: "Syne",
       body: "Lexend",
     },
-    container: {
-      padding: {
-        DEFAULT: ".9rem",
-        lg: "2.5rem",
-      },
-    },
+
     screens: {
       xs: "356",
       sm: "640px",
@@ -22,6 +15,9 @@ module.exports = {
       xl: "1280px",
     },
     extend: {
+      backgroundImage: {
+        footer: "url('./src/assets/footer-background.jpg')",
+      },
       zIndex: {
         100: "100",
       },

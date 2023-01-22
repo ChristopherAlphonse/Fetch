@@ -1,12 +1,10 @@
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
-
 import Logo from "../../assets/footer-logo.svg";
 
 function Footer() {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <footer className="bg-primary">
+    <footer className="bg-primary bg-footer">
       <div className="container mx-auto p-6">
         <div className="flex justify-around">
           <div className="-mx-6 w-full lg:w-2/5">
@@ -84,7 +82,7 @@ function Footer() {
 
         <div className="flex justify-end">
           <p className="text-center text-gray-100 ">
-            ©{year} Fetch, All rights reserved.
+            ©2013 - {year} Fetch, All rights reserved.
           </p>
         </div>
       </div>
