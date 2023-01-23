@@ -20,5 +20,10 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
+*.firebase
 *.sln
 *.sw?
+./firebase
+firebase
+
+/dist

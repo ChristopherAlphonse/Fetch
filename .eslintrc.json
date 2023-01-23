@@ -49,6 +49,7 @@
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/label-has-for": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "eslint import/no-extraneous-dependencies": "off",
     "function-paren-newline": "off",
     "react-hooks/exhaustive-deps": "off",
     "indent": "off",

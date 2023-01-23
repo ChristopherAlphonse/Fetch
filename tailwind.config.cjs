@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         footer: "url('./src/assets/footer-background.jpg')",
+        hero: "url('./src/assets/pexels-ewel-z-1594927.jpg')",
       },
       zIndex: {
         100: "100",

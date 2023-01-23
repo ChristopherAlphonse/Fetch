@@ -7,16 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": " vite build && firebase deploy --only hosting",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint src --ext .js,.jsx --fix",
     "checked": "ncu && ncu -u && yarn install",
     "prepare": "husky install",
-    "git": "powershell /c git-commit.sh"
+    "git": "powershell /c pre-commit"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0"
   },
   "devDependencies": {
@@ -24,6 +24,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.1",
     "autoprefixer": "^10.4.13",
+    "axios": "^1.2.3",
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
@@ -37,9 +38,9 @@
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "react-helmet-async": "^1.3.0",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.4",
+    "react-icons": "^4.7.1",
     "react-toastify": "^9.1.1",
-    "axios": "^1.2.3"
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.4"
   }
 }
