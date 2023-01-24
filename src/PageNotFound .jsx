@@ -7,9 +7,9 @@ function PageNotFound() {
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Fetch Rewards | Page Not Found</title>
-        <link rel="canonical" href="" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <link rel="canonical" href="/404" />
+        <meta name="description" content="page not found" />
+        <meta name="keywords" content="404" />
       </Helmet>
 
       <section className="flex h-full items-center p-16 dark:bg-gray-900 dark:text-gray-100">

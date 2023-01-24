@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { ImLinkedin2 } from "react-icons/im";
 import axios from "axios";
 
-function Alt() {
+function Hero() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -111,6 +111,16 @@ function Alt() {
         })
         .catch((error) => {
           console.error(error);
+          toast.error("Error", {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         });
     }
   };
@@ -310,4 +320,4 @@ function Alt() {
   );
 }
 
-export default Alt;
+export default Hero;

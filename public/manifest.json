@@ -1,0 +1,42 @@
+{
+  "name": "FE take home",
+  "short_name": "FE take home",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "logo512.webp",
+      "sizes": "48x48",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo192.webp",
+      "type": "image/webp",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo16.webp",
+      "type": "image/webp",
+      "sizes": "16x16"
+    },
+    {
+      "src": "logo32.webp",
+      "type": "image/webp",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "logo512.webp",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

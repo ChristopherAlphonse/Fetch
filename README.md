@@ -50,7 +50,7 @@
 
 <hr/>
 
-## React, Vite, React-Icons, Toastify, Tailwind, Husky, react-helmet-async, eslint, Axios, React-router-dom
+## React, Vite, React-Icons, Toastify, Tailwind, Husky, react-helmet-async, eslint, Axios, React-router-dom, React Testing Library
 
 ### Used Postman prior to coding to test the API.
 
@@ -60,6 +60,7 @@
 - Toastify: Used for giving user the "ok" once validated and POST to Database.
 - Husky: Used for commit, to validation ESLint rules set by Airbnb, and altered by me.
 - React-router-dom: Used for Routing, once used navigated to "/" I Redirected users to my pref route "/register"
+- React Testing Library: Used for testing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

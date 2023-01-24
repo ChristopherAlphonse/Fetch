@@ -3,3 +3,11 @@ node_modules/*
 public
 build
 dist
+node_modules
+/.cache
+/.husky
+.eslintignore
+.gitignore
+.git
+.prettierignore
+.prettierrc.json

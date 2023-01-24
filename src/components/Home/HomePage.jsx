@@ -1,9 +1,9 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Suspense, useMemo, useState } from "react";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Suspense, lazy, useMemo, useState } from 'react';
 
-import Footer from "../Footer/Footer";
-import Hero from "../Hero/Hero";
-import Nav from "../Navbar/Nav";
+const Footer = lazy(async () => import('../Footer/Footer'));
+const Hero = lazy(async () => import('../Hero/Hero'));
+const Nav = lazy(async () => import('../Navbar/Nav'));
 
 function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -18,9 +18,12 @@ function HomePage() {
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Fetch Rewards | Front-End </title>
-        <link rel="canonical" href="" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <link
+          rel="canonical"
+          href="https://portfolio-placeholder-ccb7f.web.app/Register"
+        />
+        <meta name="description" content="take home project" />
+        <meta name="keywords" content="fe, fetch rewards, chris alphonse dev" />
       </Helmet>
 
       <div>
@@ -31,14 +34,13 @@ function HomePage() {
             </div>
           </section>
         ) : (
-          <>
-            <Suspense fallback={<div> Loading ...</div>}>
-              <Nav />
+          <Suspense fallback={<div> Loading ...</div>}>
+            <Nav />
 
-              <Hero />
-              <Footer />
-            </Suspense>
-          </>
+            <Hero />
+
+            <Footer />
+          </Suspense>
         )}
       </div>
     </HelmetProvider>

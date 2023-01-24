@@ -1,66 +1,88 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+
+    "node": true
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"],
-  "overrides": [],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+
+    "import",
+    "unused-imports"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:import/recommended",
+
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-
-  "plugins": ["react", "react-hooks", "prettier"],
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.{js,jsx}"
+      ],
+      "rules": {
+        "react/prop-types": "off",
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              [
+                "parent",
+                "sibling"
+              ],
+              "index",
+              "object",
+              "type"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "./**/**\\.css",
+                "group": "type",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [
+              "builtin"
+            ],
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            },
+            "newlines-between": "always",
+            "warnOnUnassignedImports": true
+          }
+        ]
+      }
+    }
+  ],
   "rules": {
-    "quotes": [
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-quotes": [
       "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
+      "prefer-double"
     ],
-
+    "no-unused-vars": "warn",
+    "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
-    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
-
-    "implicit-arrow-linebreak": "off",
-    "react/jsx-uses-react": "off",
-    "no-shadow": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "no-console": "off",
-    "react/prop-types": 0,
-    "max-len": ["error", { "code": 2650 }],
-    "operator-linebreak": "off",
-    "import/prefer-default-export": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/jsx-no-useless-fragment": "off",
-    "object-curly-newline": "off",
-    "no-unused-expressions": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/no-static-element-interactions": "off",
-    "jsx-a11y/no-noninteractive-element-interactions": "off",
-    "jsx-a11y/label-has-associated-control": "off",
-    "jsx-a11y/no-autofocus": "off",
-    "jsx-a11y/label-has-for": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "eslint import/no-extraneous-dependencies": "off",
-    "function-paren-newline": "off",
-    "react-hooks/exhaustive-deps": "off",
-    "indent": "off",
-    "radix": "off",
-    "no-new": "off",
-    "import/order": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ]
+    "react/prop-types": "warn",
+    "semi": "error"
   }
 }
