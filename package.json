@@ -52,7 +52,7 @@
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "postcss-syntax": "^0.36.2",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.5",
     "prettier-plugin-style-order": "^0.2.2",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "stylelint": "^14.16.1",
