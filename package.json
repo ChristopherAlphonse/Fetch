@@ -61,6 +61,6 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-scss": "^4.3.0",
     "tailwindcss": "^3.2.4",
-    "webpack": "^5.75.0"
+    "webpack": "^5.77.0"
   }
 }
